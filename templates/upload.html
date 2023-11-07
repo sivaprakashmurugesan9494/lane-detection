@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lane Detection</title>
+</head>
+<body>
+    <h1>Lane Detection</h1>
+    <form method="POST" action="/process" enctype="multipart/form-data">
+        <input type="file" name="video" accept=".mp4">
+        <input type="submit" value="Process Video">
+    </form>
+    <br>
+    <video controls width="640">
+        <source src="{{ processed_video }}" type="video/mp4">
+    </video>
+</body>
+</html>
